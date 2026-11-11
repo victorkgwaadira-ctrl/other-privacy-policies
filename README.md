@@ -30,6 +30,9 @@ wrangler.toml                 <- Worker config (name must stay "other-privacy-po
 3. In `worker.js`, add `import myApp from "./docs/<slug>/index.html";` and `"<slug>": myApp,` in `PAGES`.
 4. Commit and push to `main`. The Worker (via Workers Builds) and GitHub Pages both update automatically.
 
+## Deploys
+Pushing to `main` triggers Cloudflare Workers Builds (`npx wrangler deploy`) and GitHub Pages automatically.
+
 ## Rollback
 - Worker: Cloudflare dashboard > other-privacy-policies > Deployments > roll back, or `git revert` the bad commit and push.
 - Pages: `git revert` and push.
