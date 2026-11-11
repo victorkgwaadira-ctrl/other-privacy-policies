@@ -4,7 +4,7 @@ Privacy policies for Vikaranet apps, served from two places so they stay online 
 
 | | URL | Role |
 |---|---|---|
-| **Cloudflare Worker** | `https://other-privacy-policies.<subdomain>.workers.dev/audit-and-order/` | Primary. Use this in Play Console |
+| **Cloudflare Worker** | https://policies.vikaranet.com/audit-and-order/ | Primary. Use this in Play Console |
 | **GitHub Pages** | https://victorkgwaadira-ctrl.github.io/other-privacy-policies/audit-and-order/ | Backup mirror |
 
 If the Worker is ever down, open Play Console > App content > Privacy policy, paste the GitHub Pages link and save.
