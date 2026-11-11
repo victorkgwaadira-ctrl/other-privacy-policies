@@ -21,6 +21,15 @@ const PAGES = {
   "audit-and-order": auditAndOrder,
 };
 
+// Short / alternative paths that redirect to the canonical policy URL
+const ALIASES = {
+  "auditandorder": "audit-and-order",
+  "audit-order": "audit-and-order",
+  "audit": "audit-and-order",
+  "audit-and-order/privacy": "audit-and-order",
+  "com.vikaranet.auditandorder": "audit-and-order",
+};
+
 const HTML_HEADERS = {
   "content-type": "text/html; charset=utf-8",
   "cache-control": "public, max-age=3600",
@@ -42,6 +51,7 @@ export default {
     }
 
     const slug = path.slice(1).toLowerCase();
+    if (ALIASES[slug]) return Response.redirect(url.origin + "/" + ALIASES[slug] + "/", 301);
     if (PAGES[slug]) {
       // Keep a trailing slash so relative links behave the same as on GitHub Pages
       if (!url.pathname.endsWith("/")) return Response.redirect(url.origin + "/" + slug + "/", 301);

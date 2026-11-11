@@ -22,7 +22,7 @@ wrangler.toml                 <- Worker config (name must stay "other-privacy-po
 ## Policies
 | App | Path |
 |---|---|
-| Audit & Order | `/audit-and-order/` |
+| Audit & Order | `/audit-and-order/` (aliases: `/auditandorder`, `/audit-order`, `/audit`, `/com.vikaranet.auditandorder`) |
 
 ## Add a new app policy
 1. Create `docs/<slug>/index.html`.
