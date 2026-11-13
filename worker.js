@@ -16,9 +16,11 @@
 import indexHtml from "./docs/index.html";
 import appAdsTxt from "./docs/app-ads.txt";
 import auditAndOrder from "./docs/audit-and-order/index.html";
+import heisenbug from "./docs/heisenbug/index.html";
 
 const PAGES = {
   "audit-and-order": auditAndOrder,
+  "heisenbug": heisenbug,
 };
 
 // Short / alternative paths that redirect to the canonical policy URL
@@ -28,6 +30,8 @@ const ALIASES = {
   "audit": "audit-and-order",
   "audit-and-order/privacy": "audit-and-order",
   "com.vikaranet.auditandorder": "audit-and-order",
+  "heisenbug/privacy": "heisenbug",
+  "com.vikaranet.heisenbug": "heisenbug",
 };
 
 const HTML_HEADERS = {
