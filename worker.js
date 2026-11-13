@@ -8,6 +8,8 @@
  * Routes:
  *   /                    -> docs/index.html (list of policies)
  *   /audit-and-order/    -> docs/audit-and-order/index.html
+ *   /heisenbug/          -> docs/heisenbug/index.html
+ *   /entropy-rush/       -> docs/entropy-rush/index.html
  *   /app-ads.txt         -> docs/app-ads.txt
  *
  * To add an app: create docs/<slug>/index.html, link it in docs/index.html,
@@ -17,10 +19,12 @@ import indexHtml from "./docs/index.html";
 import appAdsTxt from "./docs/app-ads.txt";
 import auditAndOrder from "./docs/audit-and-order/index.html";
 import heisenbug from "./docs/heisenbug/index.html";
+import entropyRush from "./docs/entropy-rush/index.html";
 
 const PAGES = {
   "audit-and-order": auditAndOrder,
   "heisenbug": heisenbug,
+  "entropy-rush": entropyRush,
 };
 
 // Short / alternative paths that redirect to the canonical policy URL
@@ -32,6 +36,9 @@ const ALIASES = {
   "com.vikaranet.auditandorder": "audit-and-order",
   "heisenbug/privacy": "heisenbug",
   "com.vikaranet.heisenbug": "heisenbug",
+  "entropyrush": "entropy-rush",
+  "entropy-rush/privacy": "entropy-rush",
+  "com.vikaranet.entropyrush": "entropy-rush",
 };
 
 const HTML_HEADERS = {
