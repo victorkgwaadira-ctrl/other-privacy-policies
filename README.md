@@ -17,6 +17,7 @@ docs/                         <- the pages (single source of truth)
   audit-and-order/index.html  <- Audit & Order policy
   heisenbug/index.html        <- Heisenbug policy
   entropy-rush/index.html     <- Entropy Rush policy
+  spooky-twins/index.html     <- Spooky Twins policy
 worker.js                     <- Cloudflare Worker, imports the pages from docs/
 wrangler.toml                 <- Worker config (name must stay "other-privacy-policies")
 ```
@@ -27,6 +28,7 @@ wrangler.toml                 <- Worker config (name must stay "other-privacy-po
 | Audit & Order | `/audit-and-order/` (aliases: `/auditandorder`, `/audit-order`, `/audit`, `/com.vikaranet.auditandorder`) |
 | Heisenbug | `/heisenbug/` (aliases: `/heisenbug/privacy`, `/com.vikaranet.heisenbug`) |
 | Entropy Rush | `/entropy-rush/` (aliases: `/entropyrush`, `/entropy-rush/privacy`, `/com.vikaranet.entropyrush`) |
+| Spooky Twins | `/spooky-twins/` (aliases: `/spookytwins`, `/spooky`, `/spooky-twins/privacy`, `/com.vikaranet.spookytwins`) |
 
 ## Add a new app policy
 1. Create `docs/<slug>/index.html`.

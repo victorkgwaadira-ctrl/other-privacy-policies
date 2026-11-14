@@ -10,6 +10,7 @@
  *   /audit-and-order/    -> docs/audit-and-order/index.html
  *   /heisenbug/          -> docs/heisenbug/index.html
  *   /entropy-rush/       -> docs/entropy-rush/index.html
+ *   /spooky-twins/       -> docs/spooky-twins/index.html
  *   /app-ads.txt         -> docs/app-ads.txt
  *
  * To add an app: create docs/<slug>/index.html, link it in docs/index.html,
@@ -20,11 +21,13 @@ import appAdsTxt from "./docs/app-ads.txt";
 import auditAndOrder from "./docs/audit-and-order/index.html";
 import heisenbug from "./docs/heisenbug/index.html";
 import entropyRush from "./docs/entropy-rush/index.html";
+import spookyTwins from "./docs/spooky-twins/index.html";
 
 const PAGES = {
   "audit-and-order": auditAndOrder,
   "heisenbug": heisenbug,
   "entropy-rush": entropyRush,
+  "spooky-twins": spookyTwins,
 };
 
 // Short / alternative paths that redirect to the canonical policy URL
@@ -39,6 +42,10 @@ const ALIASES = {
   "entropyrush": "entropy-rush",
   "entropy-rush/privacy": "entropy-rush",
   "com.vikaranet.entropyrush": "entropy-rush",
+  "spookytwins": "spooky-twins",
+  "spooky": "spooky-twins",
+  "spooky-twins/privacy": "spooky-twins",
+  "com.vikaranet.spookytwins": "spooky-twins",
 };
 
 const HTML_HEADERS = {
